@@ -1,0 +1,2 @@
+# dockerizedDjango
+Django App dockerization
