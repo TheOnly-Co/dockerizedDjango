@@ -1,5 +1,12 @@
 version: 2
 jobs:
   build:
+    working_directory: ~/myDjango
     docker:
-      - image: circleci/python:3.6.4 
+      - image: circleci/python:3.6.4
+      steps:
+        - checkout 
+        - run:
+            command: |
+              sudo pip install pipenv
+              pipenv install 
