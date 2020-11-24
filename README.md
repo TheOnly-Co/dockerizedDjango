@@ -1,7 +1,6 @@
 # dockerizedDjango
 
 [![CircleCI](https://circleci.com/gh/TheOnly-Co/dockerizedDjango.svg?style=svg)](https://circleci.com/gh/TheOnly-Co/dockerizedDjango)
-This is a practice for docker and Kubernetes + continuous intergration and delivery with CircleCI
 
 ## How to
 
