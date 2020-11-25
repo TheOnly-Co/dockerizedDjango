@@ -15,5 +15,5 @@
 
    - run `docker pull 0857/mydjango_web:latest`
    - run `kubectl create -f deployment.yaml` in Kubernetes nodes
-   - run `kubectl port-forward svc/mydjango-web-svc -n infra 8000`
+   - run `kubectl port-forward svc/mydjango-web-svc 8000`
    - go to [localhost:8000/hello](http://localhost:8000/hello) in the browser to see the information
