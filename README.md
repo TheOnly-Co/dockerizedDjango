@@ -4,16 +4,16 @@
 
 ## How to
 
-    1. Run server normally
+1. Run server
 
-        - make sure you have python3 and pip installed on your machine
-        - `cd myDjango`
-        - run `python3 manage.py runserver`
-        - go to localhost:8000 to see the information
+   - make sure you have python3 and pip installed on your machine
+   - `cd myDjango`
+   - run `python3 manage.py runserver`
+   - go to [localhost:8000/hello](localhost:8000/hello) in the browser to see the information
 
-    2. Docker Image
+2. Docker Image + Kubernetes
 
-        - make sure you docker installed
-        - `cd myDjango`
-        - run `docker-compose up`
-        - go to localhost:8000
+   - run `docker pull 0857/mydjango_web:latest`
+   - run `kubectl create -f deployment.yaml` in Kubernetes nodes
+   - run `kubectl port-forward svc/mydjango-web-svc -n infra 8000`
+   - go to [localhost:8000/hello](localhost:8000/hello) in the browser to see the information
