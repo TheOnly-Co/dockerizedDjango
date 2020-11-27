@@ -11,9 +11,9 @@
    - run `python3 manage.py runserver`
    - go to [localhost:8000/hello](http://localhost:8000/hello) in the browser to see the information
 
-2. Docker Image + Kubernetes
+2. Docker Compose + Kubernetes
 
-   - run `docker pull 0857/mydjango_web:latest`
+   - run `docker pull 0857/mydjango_web:thanksgiving`
    - run `kubectl create -f deployment.yaml` in Kubernetes nodes
-   - run `kubectl port-forward svc/mydjango-web-svc 8000`
+   - run `kubectl port-forward svc/mydjango-web-svc-thanksgiving 8000`
    - go to [localhost:8000/hello](http://localhost:8000/hello) in the browser to see the information
